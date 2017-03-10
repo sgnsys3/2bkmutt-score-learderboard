@@ -53,5 +53,5 @@ io.on('connection', function(client) {
         io.emit('updateData', section)
     })
 });
-
+console.log('Server Start @ port 4200')
 server.listen(4200);

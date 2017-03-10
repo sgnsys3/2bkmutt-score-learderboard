@@ -1,0 +1,88 @@
+.background-image {
+  background-image: url('/assets/custom/images/bg.jpg');
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  min-width: 2048px;
+  min-height: 1365px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  filter: blur(.2em);
+  -webkit-filter: blur(.2em);
+  position: fixed;
+  z-index: -1;
+}
+
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+#mycontainer {
+  -webkit-animation-name: pulse 5s infinite;
+  animation-name: pulse 5s infinite;
+  margin: auto;
+  padding-top: .02em;
+  background-color: white;
+  width: 24em;
+  height: 5em;
+}
+
+.header {
+  color: white;
+  text-align: center;
+}
+
+.score-card {
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+}
+
+.bar {
+  border-style: solid;
+  border-color: white;
+  border-width: 1px;
+}
+
+.progress-wrapper {
+  width: 100%;
+  background-color: #ddd;
+}
+
+.progress {
+  height: 100%;
+  background-color: #4caf50;
+  text-align: center;
+  color: white;
+}

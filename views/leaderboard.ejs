@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="/assets/bower/sweetalert/dist/sweetalert.css">
+      <link type="text/css" rel="stylesheet" href="/assets/bower/materialize/dist/css/materialize.min.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="/assets/custom/css/2bstaff.css">
+      <title>2B-KMUTT Scoring System</title>
+  </head>
+  <body>
+    <div class="background-image">
+    </div>
+    <div class="container">
+      <div class="collection">
+        <div class="collection-item">
+          <ul class="grid">
+            <% for(i=1;i<=5;i++){ %>
+            <li class="row card" style="width:100%" section="<%=i%>">
+              <div class="col s4"><h2 id="section-id-<%=i%>" class="green-text"style="margin-top: .7em">SEC: <%=i%></h2></div>
+              <div class="col s8">
+                <div class="progress-wrapper">
+                  <div id="progress-percent-section-<%=i%>" class="progress" style="width: 0%;">
+                    <h2 class="center-align base-success" id="progress-section-<%=i%>">0</h2>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <% } %>
+          </ul>
+        </div>
+      </div>
+    </div>
+  <script src="/assets/bower/jquery/dist/jquery.min.js"></script>
+    <script src="/assets/bower/materialize/dist/js/materialize.min.js"></script>
+    <script src="/assets/bower/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="/assets/bower/matchHeight/dist/jquery.matchHeight-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.min.js"></script>
+    <script src="/assets/custom/js/leader.js"></script>
+  </body>
+</html>

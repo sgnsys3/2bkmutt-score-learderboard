@@ -1,0 +1,20 @@
+{
+  "name": "2bkmutt-score-learderboard",
+  "version": "1.0.0",
+  "description": "An 2B-KMUTT LeaderBoard System for Activity Day",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "leaderboard"
+  ],
+  "author": "Pureewat Kaewpoy",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.5.6",
+    "express": "^4.15.2",
+    "materialize-css": "^0.98.0",
+    "socket.io": "^1.7.3"
+  }
+}

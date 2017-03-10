@@ -1,0 +1,24 @@
+{
+  "name": "2bkmutt-score-learderboard",
+  "description": "An 2B-KMUTT LeaderBoard System for Activity Day",
+  "main": "index.js",
+  "authors": [
+    "Pureewat Kaewpoy"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "leaderboard"
+  ],
+  "homepage": "index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "sweetalert": "^1.1.3"
+  }
+}

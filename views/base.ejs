@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="/assets/bower/sweetalert/dist/sweetalert.css">
+      <link type="text/css" rel="stylesheet" href="/assets/bower/materialize/dist/css/materialize.min.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="/assets/custom/css/2bstaff.css">
+      <title>2B-KMUTT Scoring System</title>
+  </head>
+  <body>
+    <div class="background-image">
+    </div>
+    <div class="container">
+      <div class="collection">
+        <div class="collection-item">
+          <div class="row center-align"><h1 class="red-text text-accent-1">ฐานที่: <%= base%></h1></div>
+          <input type="hidden" id="base" value="<%= base%>">
+          <% for(i=1;i<=5;i++){ %>
+          <div class="row">
+            <div class="card">
+              <div class="card-content">
+                <span class="card-title">Section: <%= i%></span>
+              </div>
+              <div class="card-action">
+                <div class="row">
+                  <div class="btn waves-effect waves-light green successful col s12" section="<%= i%>" id="btn-successful-<%= i%>">Successful</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <% } %>
+
+        </div>
+      </div>
+    </div>
+  <script src="/assets/bower/jquery/dist/jquery.min.js"></script>
+    <script src="/assets/bower/materialize/dist/js/materialize.min.js"></script>
+    <script src="/assets/bower/sweetalert/dist/sweetalert.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.min.js"></script>
+    <script src="/assets/custom/js/client.js"></script>
+  </body>
+</html>

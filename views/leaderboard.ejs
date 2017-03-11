@@ -19,8 +19,8 @@
         <div class="collection-item">
           <ul class="grid">
             <% for(i=1;i<=5;i++){ %>
-            <li class="row card" style="width:100%" section="<%=i%>">
-              <div class="col s4"><h2 id="section-id-<%=i%>" class="green-text"style="margin-top: .7em">SEC: <%=i%></h2></div>
+            <li id="card-section-<%=i%>" class="row card" style="width:100%" section="<%=i%>" success-range="" success="">
+              <div class="col s4"><h2 id="section-id-<%=i%>" style="margin-top: .7em">SEC: <%=i%></h2></div>
               <div class="col s8">
                 <div class="progress-wrapper">
                   <div id="progress-percent-section-<%=i%>" class="progress" style="width: 0%;">

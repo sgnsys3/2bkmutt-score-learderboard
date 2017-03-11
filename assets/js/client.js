@@ -4,7 +4,7 @@ client.emit('requireData')
 client.on('returnData', function (data) {
   var thisBase = $('#base').val()
   for(i=1;i<=5;i++) {
-    if(data[i][thisBase] === true) {
+    if(data.sectionData[i][thisBase] === true) {
       $('#btn-successful-'+i).toggleClass('disabled')
       $('#btn-successful-'+i).html('Submitted')
     }
